@@ -27,6 +27,14 @@ myApp.controller('index',function($scope){
 });
 // "文章页"控制器
 myApp.controller('article',function($scope){
-	console.log("article");
+	var hash = location.hash;
+	hash = hash.split('#/article')[1];
+	console.log("article",hash);
+	for(var i=0,len=aArticle.length;i<len;i++){
+		if(aArticle[i].url==hash){
+			$scope.article = aArticle[i];
+			break;
+		}
+	}
 });
 
