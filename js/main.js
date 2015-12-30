@@ -27,13 +27,11 @@ myApp.controller('aArticleCtrl', function($scope) {
     }
 });
 // 定义控制器Ctrl1
-myApp.controller('aArticleCtrl',function($scope){
-	alert("Ctrl1");
+myApp.controller('detailArticleCtrl',function($scope){
 	console.log("Ctrl1");
 });
 // 定义控制器Ctrl2
-myApp.controller('aArticleCtrl',function($scope){
-	alert("Ctrl2");
+myApp.controller('aArticleCtrl2',function($scope){
 	console.log("Ctrl2");
 });
 
