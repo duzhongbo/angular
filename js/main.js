@@ -14,7 +14,7 @@ myApp.controller('navCtrl',function($scope){
 // 路由设置
 myApp.config(function($routeProvider) {
 $routeProvider
-    .when('/', {
+    .when('/index', {
       templateUrl: 'views/index.html',
       controller: 'index'
     })
@@ -35,7 +35,6 @@ myApp.controller('index',function($scope){
 myApp.controller('article',function($scope){
 	var hash = location.hash;
 	hash = hash.split('#/article')[1];
-	console.log("article",hash);
 	for(var i=0,len=aArticle.length;i<len;i++){
 		if(aArticle[i].url==hash){
 			$scope.article = aArticle[i];
