@@ -6,6 +6,15 @@ title: 杜忠波的个人网站
 
 
 <div ng-app="myApp" class="common-inner">
+	<div class="head">
+		<div class="nav" ng-controller="navCtrl">
+			<ul class="nav-ul">
+				<li class="nav-li" ng-repeat="x in aNav">
+					// x.text //
+				</li>
+			</ul>
+		</div>
+	</div>
 	<div ng-view></div>
 </div>
 

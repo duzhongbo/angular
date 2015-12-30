@@ -5,6 +5,12 @@ myApp.config(function($interpolateProvider) {
   $interpolateProvider.startSymbol('//');
   $interpolateProvider.endSymbol('//');
 });
+
+// 导航控制器
+myApp.controller('navCtrl',function($scope){
+	$scope.aNav=aNav;
+})
+
 // 路由设置
 myApp.config(function($routeProvider) {
 $routeProvider
