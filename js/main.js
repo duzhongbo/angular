@@ -10,7 +10,7 @@ myApp
 
 $routeProvider
         .when('/', {
-          templateUrl: 'views/1.html',
+          templateUrl: 'views/index.html',
           controller: 'Ctrl1'
         })
         .when('/ww', {
@@ -20,15 +20,19 @@ $routeProvider
 
   });
 // 定义一个控制器
-myApp.controller('aArticleCtrl', function($scope) {
+// myApp.controller('aArticleCtrl', function($scope) {
+//     $scope.aArticle = aArticle;
+//     $scope.click = function(o){
+//     	console.log(o.x);
+//     }
+// });
+// 定义控制器Ctrl1
+myApp.controller('Ctrl1',function($scope){
+	console.log("Ctrl1");
     $scope.aArticle = aArticle;
     $scope.click = function(o){
     	console.log(o.x);
     }
-});
-// 定义控制器Ctrl1
-myApp.controller('Ctrl1',function($scope){
-	console.log("Ctrl1");
 });
 // 定义控制器Ctrl2
 myApp.controller('Ctrl2',function($scope){
