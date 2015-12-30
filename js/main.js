@@ -10,11 +10,11 @@ myApp
 
 $routeProvider
         .when('/', {
-          templateUrl: 'views/main.html',
+          templateUrl: 'views/1.html',
           controller: 'Ctrl1'
         })
         .when('/ww', {
-          templateUrl: '/views/day.html',
+          templateUrl: '/views/2.html',
           controller: 'Ctrl2'
         })
 
@@ -27,11 +27,11 @@ myApp.controller('aArticleCtrl', function($scope) {
     }
 });
 // 定义控制器Ctrl1
-myApp.controller('detailArticleCtrl',function($scope){
+myApp.controller('Ctrl1',function($scope){
 	console.log("Ctrl1");
 });
 // 定义控制器Ctrl2
-myApp.controller('aArticleCtrl2',function($scope){
+myApp.controller('Ctrl2',function($scope){
 	console.log("Ctrl2");
 });
 
