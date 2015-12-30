@@ -12,9 +12,9 @@ $routeProvider
       templateUrl: 'views/index.html',
       controller: 'index'
     })
-    .when('/ww', {
-      templateUrl: '/views/2.html',
-      controller: 'Ctrl2'
+    .when('/article/:year/:month/:date/:title', {
+      templateUrl: '/views/article.html',
+      controller: 'article'
     })
 });
 
@@ -25,8 +25,8 @@ myApp.controller('index',function($scope){
     	console.log(o.x);
     }
 });
-// 定义控制器Ctrl2
-myApp.controller('Ctrl2',function($scope){
-	console.log("Ctrl2");
+// "文章页"控制器
+myApp.controller('article',function($scope){
+	console.log("article");
 });
 
