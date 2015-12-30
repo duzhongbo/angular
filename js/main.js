@@ -5,30 +5,21 @@ myApp.config(function($interpolateProvider) {
   $interpolateProvider.startSymbol('//');
   $interpolateProvider.endSymbol('//');
 });
-myApp
-  .config(function($routeProvider) {
-
+// 路由设置
+myApp.config(function($routeProvider) {
 $routeProvider
-        .when('/', {
-          templateUrl: 'views/index.html',
-          controller: 'Ctrl1'
-        })
-        .when('/ww', {
-          templateUrl: '/views/2.html',
-          controller: 'Ctrl2'
-        })
+    .when('/', {
+      templateUrl: 'views/index.html',
+      controller: 'index'
+    })
+    .when('/ww', {
+      templateUrl: '/views/2.html',
+      controller: 'Ctrl2'
+    })
+});
 
-  });
-// 定义一个控制器
-// myApp.controller('aArticleCtrl', function($scope) {
-//     $scope.aArticle = aArticle;
-//     $scope.click = function(o){
-//     	console.log(o.x);
-//     }
-// });
-// 定义控制器Ctrl1
-myApp.controller('Ctrl1',function($scope){
-	console.log("Ctrl1");
+// "首页"控制器
+myApp.controller('index',function($scope){
     $scope.aArticle = aArticle;
     $scope.click = function(o){
     	console.log(o.x);
