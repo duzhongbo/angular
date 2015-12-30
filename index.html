@@ -8,7 +8,7 @@ title: 杜忠波的个人网站
 <div ng-app="myApp" ng-controller="aArticleCtrl" class="common-inner">
 	<ul class="article-ul">
 		<li ng-repeat="x in aArticle" class="article-li">
-			<a href="// x.url //" class="article-a">// x.title //</a>
+			<a href="#article// x.url //" ng-click="click(this)" class="article-a">// x.title //</a>
 		</li>
 	</ul>
 </div>
